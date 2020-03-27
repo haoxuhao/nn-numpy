@@ -1,29 +1,18 @@
 # Neural Network in pure Numpy
-Implemented a fully connected neural network in pure NumPy and compared the performance with Pytorch on the Iris dataset.
+Implemented a fully connected neural network in pure NumPy and compared the performance with Pytorch on the Iris and MNIST dataset.
 
 # Run
 ``` python
-# train and get the test accuracy 
+# use nn implemented here
 python train.py
 
-'''
-output
-...
-epoch 149, batch 80, loss 0.101833
-epoch 149, batch 96, loss 0.221098
-accuracy before train: 0.400
-accuracy after train: 0.978
-'''
-
-# train and get the test accuracy using PyTorch
+# use nn in pytorch
 python pytorch_train.py
-
-'''
-output
-...
-epoch 149, batch 80, loss 0.000268
-epoch 149, batch 96, loss 0.000433
-accuracy before train: 0.333
-accuracy after train: 0.956
-'''
 ```
+
+# Accuracy 
+
+||nn-numpy|nn-pytorch
+--|--|--
+|Iris | 0.978| 0.956
+|MNIST| 0.943 |0.974
